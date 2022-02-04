@@ -1,0 +1,822 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* new navigation menu for mobile */
+
+.nav, #nav{
+    width: 0px;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    position: relative;
+    z-index: 3;
+    height: 100vh;
+    /* justify-content: space-between; */
+    position: fixed;
+    right: 0px;
+    transition: 0.4s ease-in;
+    scroll-behavior: smooth;
+    
+
+
+}
+
+.nav ul li, .nav ul li a{
+
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 60px auto;
+
+    font-size: 25px;
+    justify-content: left;
+
+}
+
+.nav ul li a:hover, .nav ul li a:active{
+
+    color: darkorange;
+    transition: 0.4s ease-in;
+
+}
+
+.nav ul{
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+.header{
+    display: flex;
+     justify-content: space-between;
+    flex-basis: 33.3%;
+    background-color: black;
+    padding-bottom: 0.625rem;
+    padding-left: 0.4375rem;
+    position: fixed;
+    top: 0rem;
+    z-index: 4;
+    width: 100vw;
+    padding-right: 0rem;
+    user-select: none;
+}
+
+.header h1{
+    color: white;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1.25rem;
+    padding: 0.3125rem;
+    margin-top: 0.1875rem;
+    user-select: none;
+}
+
+.nav2{
+    display: none;
+}
+
+
+
+.fa-bars, .fa-times{
+    display: block;
+    color: white;
+    font-size: 1.1875rem;
+    padding-right: 0rem;
+    padding-top: 0.625rem;
+    cursor: pointer;
+    position: relative;
+    right: 1.25rem;
+}
+
+
+.fa-times{
+    display: none;
+}
+
+
+
+.centeritems{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33.3%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 300px ;
+    margin-top: 0rem;
+    margin-bottom: 0rem!important;
+    padding-bottom: 18.75rem;
+    position: relative;
+    z-index: 2;
+    user-select: none;
+}
+
+.centeritems h2{
+    color: rgba(253, 251, 251, 0.932);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    text-shadow: 0 0 0.1875rem dimgrey;
+}
+
+.centerparagraph{
+    margin-top: 35px!important;
+}
+
+.centeritems p{
+    
+    color:#f0b660;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-right: 20px;
+    user-select: none;
+    opacity: 0.7;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+
+.social-icons{
+    display:flex;
+    justify-content: space-around;
+    flex-basis: 33.3%;
+}
+
+.fab{
+    font-size: 1.875rem;
+    color: white;
+    font: bold;
+    padding: 0.9375rem;
+}
+
+.home{
+    background-image: url('../images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg');
+    /* background-attachment: fixed; */
+    background-position: center center;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fa-facebook:hover{
+    color: dodgerblue;
+}
+
+.fa-twitter:hover{
+    color: dodgerblue;
+}
+
+.fa-instagram:hover{
+    color: rgb(223, 25, 58);
+}
+
+.page2{
+    background-image: url('../images/annie-spratt-6a3nqQ1YwBw-unsplash.jpg');
+    
+    
+    
+    /* background-attachment: fixed; */
+    background-position: center center;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blahblah{
+    margin-left: 60px;margin-right: 60px;
+}
+
+
+
+
+.about, .contact, .dbutton{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem 0.9375rem 0rem 0.9375rem;
+    padding-top: 3.125rem; 
+    padding-bottom:3.125rem;
+}
+    
+    .about h2, .contact h2{
+        color: darkorange;
+        text-align: center;
+         padding-bottom: 1.25rem;
+         
+    
+   
+}
+
+.about p, .contact p{
+    text-align: justify;
+    color: white;
+    font-size: 1rem;
+    margin: 0rem 0.625rem;
+    line-height: 1.875rem;
+    font-weight: 500;
+}
+
+.downloadbtn, .downloadbtn:hover{
+    background-color: darkorange;
+    width: 14.375rem;
+    position: relative;
+    top: 0rem;
+    left: 50%;
+    margin-left: -7.1875rem;
+    padding: 0.625rem 1.25rem 0.625rem 1.25rem;
+    border-radius: 0.1875rem;
+    color:white
+    
+}
+
+.downloadbtn:hover{
+    color: black !important;
+    background-color: white !important;
+}
+
+
+.education, .work, .skills, .projects{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3.125rem ;
+    padding-bottom: 3.125rem;
+}
+
+
+
+.projects li a, .projects ol li{
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: dodgerblue ;
+    margin: 50px auto;
+    font-size: 25px;
+    font-weight: 500;
+    list-style: circle !important;
+   
+    text-align: center;
+}
+
+.education h3, .work h3, .skills h3, .projects h3{
+    width: 9.375rem;
+    position: relative;
+    top: 0rem;
+    left: 50%;
+    margin-left: -4.6875rem;
+    font-size: 1.5625rem;
+    padding: 0.625rem;
+    border-bottom: 0.1875rem solid darkorange;
+    text-align: center;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    justify-content: space-around;
+    margin-bottom: 1.25rem;
+    
+    
+    
+}
+
+.education h2, .work h2, .projects h2{
+    /* border: none; */
+    /* width: 18.75rem; */
+    /* position: relative;
+    top: 0;
+    left: 50%;
+    margin-left: -9.375rem;
+    padding-top: 1.25rem; */
+    text-align: center;
+    padding-bottom: 0.625rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+    
+
+}
+
+.education p, .work p, .skills p, .projects p{
+    text-align: center;
+    color: grey;
+    font: bold;
+    font-size: 1.25rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+     margin-left:16px;
+     margin-right: 16px ; 
+}
+
+.skills h4{
+    margin-left: 16px;
+    text-align: left;
+    font-size: 1.25rem;
+}
+
+
+
+
+
+.bar1{
+    display: grid !important;
+    grid-template-columns: 90% 0;
+    grid-column-gap: none;
+    margin-left: 16px;
+    
+}
+.bar2{
+    display: grid !important;
+    grid-template-columns: 70% 20%;
+    grid-column-gap: none;
+    margin-left: 16px;
+    
+}
+.bar3{
+    display: grid !important;
+    grid-template-columns: 50% 40%;
+    grid-column-gap: none;
+    margin-left: 1rem;
+    
+}
+.bar4{
+    display: grid !important;
+    grid-template-columns: 70% 20%;
+    grid-column-gap: none;
+    margin-left: 16px;
+    
+}
+.bar5{
+    display: grid !important;
+    grid-template-columns: 50% 40%;
+    grid-column-gap: none;
+    margin-left: 1rem;
+    
+}
+.bar6{
+    display: grid !important;
+    grid-template-columns: 40% 50%;
+    grid-column-gap: none;
+    margin-left: 1rem;
+    
+}
+.bar7{
+    display: grid !important;
+    grid-template-columns: 40% 50%;
+    grid-column-gap: none;
+    margin-left: 16px;
+    
+}
+.bar8{
+    display: grid !important;
+    grid-template-columns: 60% 30%;
+    grid-column-gap: none;
+    margin-left: 16px;
+    
+}
+
+/* .bar9{
+    display: grid !important;
+    grid-template-columns: 40% 50%;
+    grid-column-gap: none;
+    margin-left: 16px;
+    
+}
+.bar10{
+    display: grid !important;
+    grid-template-columns: 40% 50%;
+    grid-column-gap: none;
+    margin-left: 16px;
+    
+}
+.bar11{
+    display: grid !important;
+    grid-template-columns: 40% 50%;
+    grid-column-gap: none;
+    margin-left: 16px;
+    
+}
+.bar12{
+    display: grid !important;
+    grid-template-columns: 40% 50%;
+    grid-column-gap: none;
+    margin-left: 16px;
+    
+} */
+
+.one,.three,.five,.seven,.nine,.eleven,.thirteen{
+    background-color: orangered;
+}
+.two,.four,.six,.eight,.ten,.twelve,.fourteen{
+    
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+
+.one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten,.eleven,.twelve,.thirteen,.fourteen{
+    padding: 1rem 1.5625rem;
+    margin-bottom: 48px;
+}
+
+.two{
+     padding: 0!important;  /*Now the bar for html is completely full */
+}
+
+
+.page4{
+    background-image: url('../images/page4.jpg');
+    /* background-attachment: fixed; */
+    background-position: center center;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.testimonials{
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    display: flex;
+    flex-direction: column;
+    text-decoration: center;
+    justify-content: center;
+    user-select: none;
+
+}
+
+.testimonials h1{
+    text-align: center;
+    color: grey;
+    font-size: 1.875rem;
+    
+    font-family: 'Times New Roman', Times, serif;
+    font: bold;
+
+}
+
+.testimonials i{
+    color: white;
+    text-align: center;
+    font-family: cursive;
+    font-size: 1.5625rem;
+    margin-left: 32px;
+    margin-right: 32px;
+    border:  0.125rem solid white;
+    padding: 0.625rem;
+    
+}
+
+.testimonials small p{
+    text-shadow: 0 0 0.0625rem;
+    color: white;
+    font-size: 0.9375rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+    margin: 32px;
+    font-weight: 800;
+}
+
+
+.page5{
+    background-image: url("../images/page5.jpg");
+    background-color: grey;
+    /* background-attachment: fixed; */
+    background-position: center center;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.chead{
+    position: relative;
+    top: 2.5rem;
+    margin-left: 3.125rem;
+    margin-right: 3.125rem;
+    padding: 0.9375rem;
+    border: 0.3125rem dashed whitesmoke;
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 6.25rem;
+
+
+}
+
+
+input[type="text"],input[type="email"],input[type="number"],textarea, input[type="submit"]{
+
+    width: 18.125rem;
+    position: relative;
+    left: 50%;
+    margin-left: -9.0625rem;
+    padding: 0.9375rem;
+    background-color: rgba(26, 20, 20, 0.623);
+    font-size: 1.5625rem;
+    font-style: normal;
+    color: white;
+    font-weight: 400;
+    margin-top: 0.625rem;
+    margin-bottom: 1.25rem;
+    border: 0.25rem solid wheat
+
+
+
+}
+
+textarea{
+    height: 12.5rem;
+}
+
+input[type="submit"]{
+    background-color: darkorange;
+    border-radius: 0.3125rem;
+    border: none;
+}
+
+
+
+
+
+
+
+.form{
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.form label{
+    
+    margin-left: 3.0625rem;
+    font-size: 1.5625rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke
+}
+
+
+
+.page6{
+    /* background-image: url('../images/page6.jpg'); */
+    background-color: black;
+    /* background-attachment: fixed; */
+    background-position: center center;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+ .page6-subdiv{
+    padding-top: 5.625rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+} 
+
+ .page6-subdiv .fab{
+    font-size: 1.125rem;
+    padding: 0.1875rem;
+    margin: 0rem;
+    padding-bottom: 0.625rem;
+
+ } 
+
+.fa-github{
+    color: peru;
+}
+
+.fa-twitter{
+    color: dodgerblue;
+}
+
+.page6-subdiv .fa-facebook{
+    color: rgb(11, 89, 167);
+}
+
+.page6-subdiv .fa-whatsapp{
+    color: rgb(57, 226, 57);
+}
+
+.page6-subdiv .fa-instagram{
+    color: rgb(223, 25, 58);
+}
+
+.page6-subdiv h5, .page6-subdiv h6{
+    color: rgba(255, 248, 220, 0.589);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.page6-subdiv h6{
+    font-size: 0.75rem;
+}
+
+.page6-subdiv a{
+    /* color: rgba(255, 248, 220, 0.589); */
+    color: white;
+    
+   
+}
+
+.page6subsub{
+    position: relative;
+    bottom: 30px;
+}
+
+.page6-subdiv .footersocials{
+    margin-bottom: 1.875rem ;
+}
+
+body{
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: hidden !important;
+    margin: auto;
+}
+
+
+
+
+.fa-arrow-up{
+    color: white;
+    font-size: 35px;
+    border: 2px solid darkorange;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: darkorange;
+
+   
+    
+    
+
+
+}
+
+.backtotop{
+    display: block!important;
+    width: 48.63px;
+    position: relative;
+    left: 50%;
+    margin-left: -24.315px;
+    z-index: 2;
+    bottom: 15px;
+    
+}
+
+
+
+@media  (min-width: 700px) {
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+       flex-basis: 33.3%;
+       background-color: black;
+       padding-bottom: 0px;
+       padding-left: 0.4375rem;
+       position: fixed;
+       top: 0rem;
+       z-index: 3;
+       width: 100vw;
+       padding-right: 0rem;
+       overflow-x: hidden;
+        
+        
+    }
+
+    .header .clickable{
+        display: none;
+    }
+
+    .nav,  #nav{
+        display: none;   /*display: flex; */
+  
+    }
+
+    .nav2{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav2 ul{
+        display: flex;
+        flex-direction: row;
+        margin-right: 20px;
+    }
+
+    
+    .nav2 ul li{
+        text-decoration: none;
+        list-style: none;
+        padding: 1.25rem;
+        cursor: pointer;
+    }
+
+    .nav2 li:hover, .nav2 li:active{
+        background-color: darkorange;
+        padding: 20px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .nav2 ul li a{
+        color: white;
+    }
+
+    .page2{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 50%;
+        overflow-x: hidden;
+    }
+
+    .dbutton{
+        display: none;
+    }
+
+    .contact p{
+        margin-left: 70px;
+        
+    }
+
+    .about p{
+        margin-left: 30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .contact{
+        margin-right: 0px;
+    }
+
+    .about{ 
+        margin-left: 0px;
+        padding-right: 20px;
+       
+    }
+
+    .contact:hover, .about:hover, .contact:active,.about:active{
+        background-color:slateblue;
+        transition: 0.4s ease-in-out;
+       
+    }
+
+    .education, .work, .skills{
+        margin-left: 80px;
+        margin-right: 80px ;
+    }
+
+    .testimonials{
+        margin-left: 80px;
+        margin-right: 80px;
+        
+    }
+
+    .form{
+        margin-left: 60px;
+        margin-right: 60px;
+
+
+    }
+
+    .chead {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+   
+}
+
+
+
+
+
+
+   
+    
+
+
+
+
