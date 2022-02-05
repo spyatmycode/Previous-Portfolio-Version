@@ -17,6 +17,7 @@ function show (){
     document.getElementById("bars").style.display= "none";
     document.getElementById("times").style.display="block";
     document.getElementById("nav").style.width="100vw";
+   document.getElementById("menuoptions").style.display ="block";
 
 
 
