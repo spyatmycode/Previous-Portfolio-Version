@@ -23,6 +23,7 @@
     right: 0px;
     transition: 0.4s ease-in;
     scroll-behavior: smooth;
+    overflow-y: scroll;
     
 
 
